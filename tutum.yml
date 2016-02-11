@@ -1,5 +1,5 @@
 lb-db:
-  image: 'tutum/haproxy:0.1'
+  image: 'tutum/haproxy:0.2.4.1'
   environment:
     - BACKEND_PORTS=28015
     - MODE=tcp
@@ -17,4 +17,3 @@ rethinkdb:
   ports:
     - '8080:8080'
   target_num_containers: 2
-
